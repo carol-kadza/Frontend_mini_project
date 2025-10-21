@@ -1,0 +1,762 @@
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Listing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+         
+        <div class="header">
+            <div class="logo">
+                <div class="logo-icon">B</div>
+                <span class="logo-text">Brand</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search">
+                <select class="category-select">
+                    <option>All category</option>
+                </select>
+                <button class="search-btn">Search</button>
+            </div>
+            <div class="header-icons">
+                <div class="header-icon">👤</div>
+                <div class="header-icon">💬</div>
+                <div class="header-icon">♡</div>
+                <div class="header-icon">🛒</div>
+            </div>
+        </div>
+
+        
+        <div class="nav">
+            <div class="nav-item">☰ All category</div>
+            <div class="nav-item">Hot offers</div>
+            <div class="nav-item">Gift boxes</div>
+            <div class="nav-item">Projects</div>
+            <div class="nav-item">Menu item</div>
+            <div class="nav-item">Help ▾</div>
+            <div class="lang-currency">
+                <span>English, USD ▾</span>
+                <span>Ship to 🇺🇸 ▾</span>
+            </div>
+        </div>
+
+        <!-- Breadcrumb 
+        <div class="breadcrumb">
+            <a href="#">Home</a> > <a href="#">Clothings</a> > <a href="#">Men's wear</a> > Summer clothing
+        </div>
+
+        <!-- Main Content 
+        <div class="main-content">
+            
+            <div class="sidebar">
+                <div class="filter-section">
+                    <div class="filter-title">
+                        Category
+                        <span>▾</span>
+                    </div>
+                    <div class="filter-option">Mobile accessory</div>
+                    <div class="filter-option">Electronics</div>
+                    <div class="filter-option">Smartphones</div>
+                    <div class="filter-option">Modern tech</div>
+                    <a href="#" class="see-all">See all</a>
+                </div>
+
+                <div class="filter-section">
+                    <div class="filter-title">
+                        Brands
+                        <span>▾</span>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> Samsung
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> Apple
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> Huawei
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> Pocco
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> Lenovo
+                    </div>
+                    <a href="#" class="see-all">See all</a>
+                </div>
+
+                <div class="filter-section">
+                    <div class="filter-title">
+                        Features
+                        <span>▾</span>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> Metalic
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> Plastic cover
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> 8GB Ram
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> Super power
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> Large Memory
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <div class="filter-title">
+                        Price range
+                        <span>▾</span>
+                    </div>
+                    <div class="price-slider">
+                        <input type="range" style="width: 100%">
+                    </div>
+                    <div class="price-inputs">
+                        <input type="text" class="price-input" placeholder="Min">
+                        <input type="text" class="price-input" placeholder="Max">
+                    </div>
+                    <button class="apply-btn">Apply</button>
+                </div>
+
+                <div class="filter-section">
+                    <div class="filter-title">
+                        Condition
+                        <span>▾</span>
+                    </div>
+                    <div class="filter-option">
+                        <input type="radio" name="condition" checked> Any
+                    </div>
+                    <div class="filter-option">
+                        <input type="radio" name="condition"> Refurbished
+                    </div>
+                    <div class="filter-option">
+                        <input type="radio" name="condition"> Brand new
+                    </div>
+                    <div class="filter-option">
+                        <input type="radio" name="condition"> Old items
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <div class="filter-title">
+                        Ratings
+                        <span>▾</span>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> <span class="stars">★★★★★</span>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> <span class="stars">★★★★</span>☆
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> <span class="stars">★★★</span>☆☆
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> <span class="stars">★★</span>☆☆☆
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product List--
+            <div class="product-list">
+                <div class="list-header">
+                    <div class="result-count">12,911 items in <b>Mobile accessory</b></div>
+                    <div class="list-controls">
+                        <label>
+                            <input type="checkbox"> Verified only
+                        </label>
+                        <span>Featured</span>
+                        <div class="view-toggle">
+                            <button class="view-btn">☰</button>
+                            <button class="view-btn active">▦</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Cards --
+                <div class="product-card">
+                    <img src="iphone.jpg" alt="Canon Camera" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">iPhone 17 Pro Max (256GB, Titanium)</h3>
+                        <div class="product-price">
+                            $1250.00
+                            <span class="original-price">$1500.00</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="rating-stars">★★★★</span>☆ <span class="rating-number">7.5</span> · 154 orders · <span class="free-shipping">Free Shipping</span>
+                        </div>
+                        <p class="product-description">The latest iPhone 17 comes with an A19 Bionic chip, ultra-wide camera system, and an all-day battery life with a titanium finish.</p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                    <button class="wishlist-btn">♡</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="samsung.jpg" alt="GoPro Camera" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Samsung Galaxy S25 Ultra (512GB)</h3>
+                        <div class="product-price">$1199.00</div>
+                        <div class="product-rating">
+                            <span class="rating-stars">★★★★</span>☆ <span class="rating-number">7.5</span> · 154 orders · <span class="free-shipping">Free Shipping</span>
+                        </div>
+                        <p class="product-description">Powerful Snapdragon Gen 4 chip, 200MP camera, and S-Pen support in a sleek glass and metal design.</p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                    <button class="wishlist-btn">♡</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="watchh.jpg" alt="GoPro Camera" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Apple Watch Series 10 (Gold, 45mm)</h3>
+                        <div class="product-price">$698.00</div>
+                        <div class="product-rating">
+                            <span class="rating-stars">★★★★</span>☆ <span class="rating-number">7.5</span> · 154 orders · <span class="free-shipping">Free Shipping</span>
+                        </div>
+                        <p class="product-description">Elegant smartwatch with ECG, blood oxygen tracking, fitness monitoring, and long battery life.</p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                    <button class="wishlist-btn">♡</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="VR.jpg" alt="Laptop" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Meta Quest 3 VR Headset (128GB)</h3>
+                        <div class="product-price">$350.00</div>
+                        <div class="product-rating">
+                            <span class="rating-stars">★★★★</span>☆ <span class="rating-number">7.5</span> · 154 orders · <span class="free-shipping">Free Shipping</span>
+                        </div>
+                        <p class="product-description">Enjoy next-level immersive experiences with improved resolution, comfort, and motion tracking</p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                    <button class="wishlist-btn">♡</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="tv.jpg" alt="Smart Watch" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">LG 75” 4K OLED Smart TV</h3>
+                        <div class="product-price">
+                            $1680.00
+                            <span class="original-price">$2000.00</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="rating-stars">★★★★</span>☆ <span class="rating-number">7.5</span> · 154 orders · <span class="free-shipping">Free Shipping</span>
+                        </div>
+                        <p class="product-description">Experience cinema-quality visuals with deep blacks, vivid colors, and smart streaming features.</p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                    <button class="wishlist-btn">♡</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="airpods.jpg" alt="Headphones" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">AirPods Pro 3 (Noise Cancelling)</h3>
+                        <div class="product-price">$150.00</div>
+                        <div class="product-rating">
+                            <span class="rating-stars">★★★★</span>☆ <span class="rating-number">7.5</span> · 154 orders · <span class="free-shipping">Free Shipping</span>
+                        </div>
+                        <p class="product-description">Advanced active noise cancellation with adaptive audio and 8-hour battery per charge.</p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                    <button class="wishlist-btn">♡</button>
+                </div>
+
+                
+                <div class="pagination">
+                    <select class="page-select">
+                        <option>Show 10</option>
+                        <option>Show 20</option>
+                        <option>Show 50</option>
+                    </select>
+                    <button class="page-btn">‹</button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn">›</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="newsletter">
+            <h3>Subscribe on our newsletter</h3>
+            <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+            <div class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="📧 Email">
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+        </div>
+
+        
+        <div class="footer">
+            <div class="footer-brand">
+                <div class="brand-info">
+                    <div class="logo-icon">B</div>
+                    <span class="logo-text">Brand</span>
+                </div>
+                <p class="brand-description">Best information about the company gies here but now lorem ipsum is</p>
+                <div class="social-icons">
+                    <div class="social-icon">f</div>
+                    <div class="social-icon">t</div>
+                    <div class="social-icon">in</div>
+                    <div class="social-icon">yt</div>
+                    <div class="social-icon">ig</div>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>About</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Find store</li>
+                    <li>Categories</li>
+                    <li>Blogs</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Partnership</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Find store</li>
+                    <li>Categories</li>
+                    <li>Blogs</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Information</h4>
+                <ul>
+                    <li>Help Center</li>
+                    <li>Money Refund</li>
+                    <li>Shipping</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>For users</h4>
+                <ul>
+                    <li>Login</li>
+                    <li>Register</li>
+                    <li>Settings</li>
+                    <li>My Orders</li>
+                </ul>
+            </div>
+            <div class="footer-column get-app">
+                <h4>Get app</h4>
+                <div class="app-buttons">
+                    <div class="app-btn">
+                        <span style="font-size: 20px;">🍎</span>
+                        <span>App Store</span>
+                    </div>
+                    <div class="app-btn">
+                        <span style="font-size: 20px;">▶️</span>
+                        <span>Google Play</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         
+        <div class="footer-bottom">
+            <div>© 2023 Ecommerce.</div>
+            <div class="footer-bottom-right">
+                <span>🇺🇸 English</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html 
+
+
+ -->
+
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Listing</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+         
+        <div class="header">
+            <div class="logo">
+                <div class="logo-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                <span class="logo-text">PURBY STORE</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search">
+                <select class="category-select">
+                    <option>All category</option>
+                </select>
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+            </div>
+            <div class="header-icons">
+                <div class="header-icon"><i class="fa-regular fa-user"></i></div>
+                <div class="header-icon"><i class="fa-regular fa-comment-dots"></i></div>
+                <div class="header-icon"><i class="fa-regular fa-heart"></i></div>
+                <div class="header-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+        </div>
+
+        
+        <div class="nav">
+            <div class="nav-item"><i class="fa-solid fa-bars"></i> All category</div>
+            <div class="nav-item">Hot offers</div>
+            <div class="nav-item">Gift boxes</div>
+            <div class="nav-item">Projects</div>
+            <div class="nav-item">Menu item</div>
+            <div class="nav-item">Help ▾</div>
+            <div class="lang-currency">
+                <span>English, USD ▾</span>
+                <span>Ship to us ▾</span>
+            </div>
+        </div>
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="#">Home</a> > <a href="#">Clothings</a> > <a href="#">Men's wear</a> > Summer clothing
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            
+            <div class="sidebar">
+                <div class="filter-section">
+                    <div class="filter-title">
+                        Category
+                        <span>▾</span>
+                    </div>
+                    <div class="filter-option">Mobile accessory</div>
+                    <div class="filter-option">Electronics</div>
+                    <div class="filter-option">Smartphones</div>
+                    <div class="filter-option">Modern tech</div>
+                    <a href="#" class="see-all">See all</a>
+                </div>
+
+                <div class="filter-section">
+                    <div class="filter-title">
+                        Brands
+                        <span>▾</span>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> Samsung
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> Apple
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> Huawei
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> Pocco
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> Lenovo
+                    </div>
+                    <a href="#" class="see-all">See all</a>
+                </div>
+
+                <div class="filter-section">
+                    <div class="filter-title">
+                        Features
+                        <span>▾</span>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> Metalic
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> Plastic cover
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> 8GB Ram
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> Super power
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> Large Memory
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <div class="filter-title">
+                        Price range
+                        <span>▾</span>
+                    </div>
+                    <div class="price-slider">
+                        <input type="range" style="width: 100%">
+                    </div>
+                    <div class="price-inputs">
+                        <input type="text" class="price-input" placeholder="Min">
+                        <input type="text" class="price-input" placeholder="Max">
+                    </div>
+                    <button class="apply-btn">Apply</button>
+                </div>
+
+                <div class="filter-section">
+                    <div class="filter-title">
+                        Condition
+                        <span>▾</span>
+                    </div>
+                    <div class="filter-option">
+                        <input type="radio" name="condition" checked> Any
+                    </div>
+                    <div class="filter-option">
+                        <input type="radio" name="condition"> Refurbished
+                    </div>
+                    <div class="filter-option">
+                        <input type="radio" name="condition"> Brand new
+                    </div>
+                    <div class="filter-option">
+                        <input type="radio" name="condition"> Old items
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <div class="filter-title">
+                        Ratings
+                        <span>▾</span>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> <span class="stars">★★★★★</span>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> <span class="stars">★★★★</span>☆
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> <span class="stars">★★★</span>☆☆
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox"> <span class="stars">★★</span>☆☆☆
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product List--> 
+            <div class="product-list">
+                <div class="list-header">
+                    <div class="result-count">12,911 items in <b>Mobile accessory</b></div>
+                    <div class="list-controls">
+                        <label>
+                            <input type="checkbox"> Verified only
+                        </label>
+                        <span>Featured</span>
+                        <div class="view-toggle">
+                            <button class="view-btn"><i class="fa-solid fa-list"></i></button>
+                            <button class="view-btn active"><i class="fa-solid fa-border-all"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Cards --> 
+                <div class="product-card">
+                    <img src="iphone.jpg" alt="iPhone 17" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">iPhone 17 Pro Max (256GB, Titanium)</h3>
+                        <div class="product-price">
+                            $1250.00
+                            <span class="original-price">$1500.00</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="rating-stars">★★★★</span>☆ <span class="rating-number">7.5</span> · 154 orders · <span class="free-shipping">Free Shipping</span>
+                        </div>
+                        <p class="product-description">The latest iPhone 17 comes with an A19 Bionic chip, ultra-wide camera system, and an all-day battery life with a titanium finish.</p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+
+                <div class="product-card">
+                    <img src="samsung.jpg" alt="Samsung S25" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Samsung Galaxy S25 Ultra (512GB)</h3>
+                        <div class="product-price">$1199.00</div>
+                        <div class="product-rating">
+                            <span class="rating-stars">★★★★</span>☆ <span class="rating-number">7.5</span> · 154 orders · <span class="free-shipping">Free Shipping</span>
+                        </div>
+                        <p class="product-description">Powerful Snapdragon Gen 4 chip, 200MP camera, and S-Pen support in a sleek glass and metal design.</p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+
+                <div class="product-card">
+                    <img src="watchh.jpg" alt="Apple Watch" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Apple Watch Series 10 (Gold, 45mm)</h3>
+                        <div class="product-price">$698.00</div>
+                        <div class="product-rating">
+                            <span class="rating-stars">★★★★</span>☆ <span class="rating-number">7.5</span> · 154 orders · <span class="free-shipping">Free Shipping</span>
+                        </div>
+                        <p class="product-description">Elegant smartwatch with ECG, blood oxygen tracking, fitness monitoring, and long battery life.</p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+
+                <div class="product-card">
+                    <img src="VR.jpg" alt="Meta Quest 3" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Meta Quest 3 VR Headset (128GB)</h3>
+                        <div class="product-price">$350.00</div>
+                        <div class="product-rating">
+                            <span class="rating-stars">★★★★</span>☆ <span class="rating-number">7.5</span> · 154 orders · <span class="free-shipping">Free Shipping</span>
+                        </div>
+                        <p class="product-description">Enjoy next-level immersive experiences with improved resolution, comfort, and motion tracking</p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+
+                <div class="product-card">
+                    <img src="tv.jpg" alt="LG 4K TV" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">LG 75” 4K OLED Smart TV</h3>
+                        <div class="product-price">
+                            $1680.00
+                            <span class="original-price">$2000.00</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="rating-stars">★★★★</span>☆ <span class="rating-number">7.5</span> · 154 orders · <span class="free-shipping">Free Shipping</span>
+                        </div>
+                        <p class="product-description">Experience cinema-quality visuals with deep blacks, vivid colors, and smart streaming features.</p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+
+                <div class="product-card">
+                    <img src="airpods.jpg" alt="AirPods Pro 3" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">AirPods Pro 3 (Noise Cancelling)</h3>
+                        <div class="product-price">$150.00</div>
+                        <div class="product-rating">
+                            <span class="rating-stars">★★★★</span>☆ <span class="rating-number">7.5</span> · 154 orders · <span class="free-shipping">Free Shipping</span>
+                        </div>
+                        <p class="product-description">Advanced active noise cancellation with adaptive audio and 8-hour battery per charge.</p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+
+                <div class="pagination">
+                    <select class="page-select">
+                        <option>Show 10</option>
+                        <option>Show 20</option>
+                        <option>Show 50</option>
+                    </select>
+                    <button class="page-btn">‹</button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn">›</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="newsletter">
+            <h3>Subscribe on our newsletter</h3>
+            <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+            <div class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="📧 Email">
+                <button class="subscribe-btn"><i class="fa-solid fa-envelope"></i> Subscribe</button>
+            </div>
+        </div>
+
+        
+        <div class="footer">
+            <div class="footer-brand">
+                <div class="brand-info">
+                    <div class="logo-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                    <span class="logo-text">PURBY STORE</span>
+                </div>
+                <p class="brand-description">
+                    PURBY STORE is your trusted tech marketplace for premium electronics and accessories. 
+                    We connect you to global brands at unbeatable prices, offering fast delivery and excellent support.
+                </p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>About</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Find store</li>
+                    <li>Categories</li>
+                    <li>Blogs</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Partnership</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Find store</li>
+                    <li>Categories</li>
+                    <li>Blogs</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Information</h4>
+                <ul>
+                    <li>Help Center</li>
+                    <li>Money Refund</li>
+                    <li>Shipping</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>For users</h4>
+                <ul>
+                    <li>Login</li>
+                    <li>Register</li>
+                    <li>Settings</li>
+                    <li>My Orders</li>
+                </ul>
+            </div>
+            <div class="footer-column get-app">
+                <h4>Get app</h4>
+                <div class="app-buttons">
+                    <div class="app-btn">
+                        <i class="fa-brands fa-apple"></i>
+                        <span>App Store</span>
+                    </div>
+                    <div class="app-btn">
+                        <i class="fa-brands fa-google-play"></i>
+                        <span>Google Play</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         
+        <div class="footer-bottom">
+            <div>© 2023 PURBY STORE. All rights reserved.</div>
+            <div class="footer-bottom-right">
+                <span> English</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
